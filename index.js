@@ -13,7 +13,7 @@ server.use(express.json()); // This is to read the body of req
 server.use(express.urlencoded({ extended: true }))
 server.use(cookieParser()); // This is used to read the cookies
 server.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://frontendweekdays.netlify.app/",
     methods: ['GET', 'POST', 'PATCH', 'PUT', 'DELETE'],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials :true , 
